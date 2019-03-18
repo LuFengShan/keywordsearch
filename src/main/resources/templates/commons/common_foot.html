@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div th:fragment="foot">
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Bootstrap core JavaScript -->
+    <script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script th:src="@{/bootstrap-3.3.7-dist/js/bootstrap.min.js}"></script>
+    <script th:src="@{/bootstrap-select-1.13.3/js/bootstrap-select.min.js}"></script>
+    <!-- jquery校验插件 -->
+    <script th:src="@{/jquery-validation-1.17.0/dist/jquery.validate.min.js}"></script>
+    <script th:src="@{/jquery-validation-1.17.0/dist/additional-methods.min.js}"></script>
+    <script th:src="@{/jquery-validation-1.17.0/dist/localization/messages_zh.min.js}"></script>
+
+    <!-- 树形结构 -->
+    <script th:src="@{/js/bootstrap-treeview.js}"></script>
+
+    <!-- include summernote css/js -->
+    <link th:href="@{/summernote/dist/summernote.css}" rel="stylesheet">
+    <script th:src="@{/summernote/dist/summernote.js}"></script>
+    <script th:src="@{/summernote/dist/lang/summernote-zh-CN.js}"></script>
+
+    <!-- wanghuidong add 2018-12-07 引入弹出层JS -->
+    <script th:src="@{/js/popbox/pop-box.js}"></script>
+
+    <script>
+        //获取服务器根路径
+        var basePath = [[@{/}]];
+    </script>
+</div>
+
+
+<!-- wanghuidong modify 2018-12-13 通用页面底部js文件 引用方式如下 -->
+<!-- <div th:replace="commons/common_foot :: foot"></div> -->

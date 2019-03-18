@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="common_header(title,links,styles)">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title th:replace="${title}">公用头文件</title>
+
+    <link rel="stylesheet" th:href="@{/bootstrap-3.3.7-dist/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/bootstrap-select-1.13.3/css/bootstrap-select.min.css}">
+
+    <!-- Custom styles for this template -->
+    <link th:href="@{/css/dashboard.css}" rel="stylesheet">
+    <!-- wanghuidong add 2018-12-07 引入弹出层CSS -->
+    <link th:href="@{/css/popbox/pop-box.css}" rel="stylesheet" type="text/css">
+
+    <!-- include summernote css/js -->
+    <link th:href="@{/summernote/dist/summernote.css}" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script th:src="@{/js/html5shiv.min.js}"></script>
+    <script th:src="@{/js/respond.min.js}"></script>
+    <![endif]-->
+</head>
+
+
+
+<!-- wanghuidong modify 2018-12-13 通用页面顶部head文件,写在head标签后 引用方式如下 -->
+<!-- <head th:replace="commons/common_header :: common_header(~{::title},~{::link},~{})"> -->

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="col-sm-9 col-md-8" th:fragment="paragraphsResult">
+    <h2>检索结果信息</h2>
+    <form id="contentForm">
+        <textarea id="textContent" name="textContent" th:text="${text!=null}?${text.textContent}:''">
+        </textarea>
+        <h5 id="maxContentPost" style="text-align:left"></h5>
+        <input type="hidden" name="keyWordGroup" id="keyWordGroup">
+        <button class="btn btn-primary searchKeyWord"
+                disabled="disabled"
+                id="btn01" type="button">提交检索</button>
+    </form>
+</div>
+<!-- 此子页面每次加载都需要初始化富文本编辑器-->
+<script th:src="@{/js/summernote/init_summernote.js}"></script>
+<!-- 子页面的每次加载都需要重新引入js,所以主页面引入后,子页面同样引入,采用js文件,引入操作提交等功能 -->
+<script th:src="@{/js/retrieval/paragraphs_operate.js}"></script>
+
+<!-- wanghuidong modify 2018-12-13 此页面为后台返回页面,包括页面初始化加载引用-->

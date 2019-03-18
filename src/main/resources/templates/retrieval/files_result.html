@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="col-sm-9 col-md-8" th:fragment="filesResult">
+    <form id="contentForm" enctype="multipart/form-data">
+        <h2>选择文件</h2>
+        <div class="input-group">
+            <input type="file" id="file" name="file" class="required">
+            <input type="hidden" name="keyWordGroup" id="keyWordGroup">
+            <div class="input-group-btn">
+                <!--<button type="button" class="btn btn-danger" aria-label="Help">删除</button>-->
+                <button type="button" id="btn_sub" class="btn btn-info">检索</button>
+            </div>
+        </div><!-- /.input-group -->
+        <!-- .doc\.docx\.wps\ -->
+        <span class="label label-danger" style="font-size:90%;padding: .4em .5em .3em;">
+                    支持的文件格式包含：.doc\.docx\.wps\.pdf\.xls\.xlsx\.et\.txt
+                </span>
+    </form>
+    <hr>
+    <h5 th:if="${fileName!=null}" th:text="${fileName!=null}?${fileName}:''"></h5>
+    <a type="button"
+       class="btn btn-info"
+       th:if="${fileName!=null}"
+       th:href="@{/files/关键字检索结果.doc}">
+        导出文件结果
+    </a>
+    <hr>
+    <div class="panel panel-primary" th:each="kw : ${listMap}">
+        <!-- Default panel contents -->
+        <div class="panel-heading" th:text="'关键字：' + ${kw.key}">XXX</div>
+        <!--<div class="panel-body">
+            <p>...</p>
+        </div>-->
+        <!-- List group -->
+        <ul class="list-group" th:each="k:${kw.value}">
+            <li class="list-group-item" th:utext="${k.content}">关键字</li>
+        </ul>
+    </div>
+</div>
+<!-- wanghuidong modify 2018-12-13 子页面的每次加载都需要重新引入js,所以主页面引入后,子页面同样引入,采用js文件,引入操作提交等功能 -->
+<script th:src="@{/js/retrieval/files_operate.js}"></script>
+
+<!-- wanghuidong modify 2018-12-13 此页面为后台返回页面,包括页面初始化加载引用 -->

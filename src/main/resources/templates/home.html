@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>关键字检索工具</title>
+
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/bootstrap-3.3.7-dist/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link th:href="@{css/sticky-footer-navbar.css}" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script th:src="@{/js/html5shiv.min.js}" rel="stylesheet"></script>
+    <script th:src="@{/js/respond.min.js}" rel="stylesheet"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div th:replace="commons/bar::topbar"></div>
+
+<!-- Begin page content -->
+<div class="container">
+    <div class="page-header">
+        <h1><!--欢迎使用标签关键字检索工具!--></h1>
+    </div>
+    <div class="jumbotron">
+        <h1>欢迎使用标签关键字检索工具!</h1>
+        <!--<p class="lead"></p>-->
+        <!--<p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>-->
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">软件供应商：XXXX-XXX-XX&nbsp;&nbsp;&nbsp;&nbsp;
+            <label
+                    th:text="'版本号：'+${#strings.substring(#httpServletRequest.getContextPath(),1)}+'正式版'"></label>
+        </p>
+    </div>
+</footer>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script th:src="@{/js/jquery-3.3.1.min.js}"></script>
+<!--<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>-->
+<script th:src="@{/bootstrap-3.3.7-dist/js/bootstrap.min.js}"></script>
+</body>
+</html>

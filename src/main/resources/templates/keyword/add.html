@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- 引入公用头文件 -->
+    <head th:replace="commons/common_header :: common_header(~{::title},~{::link},~{})">
+    <title>关键字处理</title>
+</head>
+
+<body>
+<div th:replace="commons/bar::topbar"></div>
+<div class="container-fluid">
+    <div class="row">
+        <!--引入侧边栏-->
+        <div th:replace="commons/bar::#sidebar(activeUri='keywords')"></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">关键字</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="keywordFrom" class="form-horizontal" method="post" th:action="@{/keyword}">
+                        <!--如果是修改的话，我们要转成put请求-->
+                        <input type="hidden" name="_method" value="put" th:if="${keyword!=null}"/>
+                        <!--如果是修改的话，我们要转成put请求, 同事把ID隐藏起来-->
+                        <input type="hidden" name="id" id="kid" th:if="${keyword!=null}" th:value="${keyword.id}">
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="content">关键字内容</label>
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" id="content" name="content"
+                                       placeholder="请输入内容" th:value="${keyword!=null}?${keyword.content}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-9 col-sm-offset-4">
+                                <!-- th:text="${keyword!=null}?'修改':'添加'" -->
+                                <button class="btn btn-primary" id="btn_sumbit">
+                                    保存
+                                </button>
+                                <a class="btn btn-primary" id="goBack" th:href="@{/keywords}">
+                                    返回
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引入底部通用html -->
+<div th:replace="commons/common_foot :: foot"></div>
+<script type="text/javascript">
+    $.validator.addMethod("curium", function (value, element) {
+        if (!value.length) {
+            return false;
+        }
+        var curium = /^([^@`!！%^()~,.'"，。：‘’“”【】{}/#\$%\^&\*]+)$/;
+        return curium.test(value);
+    }, "提示：不能输入任何标点符号，请重新输入！");
+
+    $(document).ready(function () {
+        $("#keywordFrom").validate({
+            rules: {
+                content: {
+                    required: true,
+                    // minlength: 2,
+                    maxlength: 50,
+                    curium: true
+                }
+            },
+            messages: {
+                content: {
+                    required: "提示：请输入内容",
+                    minlength: "关键字必须由至少2个字符组成",
+                    maxlength: "提示：内容长度超过100个字符，请重新输入！",
+                }
+            },
+            errorElement: "em",
+            errorPlacement: function (error, element) {
+                // Add the `help-block` class to the error element
+                error.addClass("help-block");
+
+                // Add `has-feedback` class to the parent div.form-group
+                // in order to add icons to inputs
+                element.parents(".col-sm-5").addClass("has-feedback");
+
+                if (element.prop("type") === "checkbox") {
+                    error.insertAfter(element.parent("label"));
+                } else {
+                    error.insertAfter(element);
+                }
+                // Add the span element, if doesn't exists, and apply the icon classes to it.
+                if (!element.next("span")[0]) {
+                    $("<span class='glyphicon glyphicon-remove form-control-feedback'></span>").insertAfter(element);
+                }
+            },
+            success: function (label, element) {
+                // Add the span element, if doesn't exists, and apply the icon classes to it.
+                if (!$(element).next("span")[0]) {
+                    $("<span class='glyphicon glyphicon-ok form-control-feedback'></span>").insertAfter($(element));
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-error").removeClass("has-success");
+                $(element).next("span").addClass("glyphicon-remove").removeClass("glyphicon-ok");
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-success").removeClass("has-error");
+                $(element).next("span").addClass("glyphicon-ok").removeClass("glyphicon-remove");
+            }
+        });
+    });
+    //新增修改关键字校验
+    //wanghuidong modify 2018-12-11 修改此处逻辑
+    $("#btn_sumbit").click(function () {
+        //校验关键字是否为空
+        var contentVal = $("#content").val();
+        if(contentVal==null||contentVal.length<1){
+            $("#alertDiv").empty();
+            $("#alertDiv").append("请输入关键字内容！");
+            showPopBox();
+            return false;
+        }
+        //校验关键字是否存在  新增和修改操作
+        var kidVal = $("#kid").val();
+        //组装json数据待传递后台处理
+        var jsonData = JSON.stringify({id : kidVal,content : contentVal});
+        var submitFlag = true;
+        $.ajax({
+            type: 'get',
+            contentType: "application/json",
+            url:  basePath+"keyword/getCount/"+encodeURI(encodeURI(jsonData)),
+            dataType: 'json',
+            async: false,
+            cache: false,
+            success: function (data) {
+                if (0 != data) {
+                    $("#alertDiv").empty();
+                    $("#alertDiv").append("系统中已经存在关键字【"+contentVal+"】，请重新输入！！");
+                    showPopBox();
+                    submitFlag = false;
+                }
+            },
+            error: function () {
+                alert("程序请求错误");
+                submitFlag = false;
+            }
+        });
+        return submitFlag;
+    });
+</script>
+</body>
+</html>

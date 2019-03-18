@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<div class="col-sm-3 col-md-4" th:fragment="right">
+    <div class="radio">
+        <label class="checkbox-inline">
+            <input type="radio" name="bedStatus" id="optionsRadios1"
+                   value="option1" checked> 关键字
+        </label>
+        <label class="checkbox-inline">
+            <input type="radio" name="bedStatus" id="optionsRadios2"
+                   value="option2"> 关键字库
+        </label>
+    </div>
+    <div id="select01">
+        <h4>选择关键字</h4>
+        <select id="sel01"
+                data-style="btn-primary"
+                class="form-control selectpicker show-tick"
+                multiple title="请选择关键字"
+                data-selected-text-format="count > 5">
+            <option th:each="kw : ${keywords}" th:text="${kw}">Mustard</option>
+        </select>
+    </div>
+    <div id="select02" style="display: none">
+        <h4>选择关键字库</h4>
+        <div id="tree"></div>
+    </div>
+</div>
+<!-- wanghuidong modify 2018-12-13 此页面只是单独的右侧树形结构.js等文件为主页面操作引入 -->

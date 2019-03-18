@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- 引入公用头文件 -->
+    <head th:replace="commons/common_header :: common_header(~{::title},~{::link},~{})">
+    <title>关键字库处理</title>
+</head>
+<body>
+<div th:replace="commons/bar::topbar"></div>
+<!-- wanghuidong add 2018-12-07 添加弹出的div层-->
+<div class="container-fluid">
+    <div class="row">
+        <!--引入侧边栏-->
+        <div th:replace="commons/bar::#sidebar(activeUri='dockers')"></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">关键字库</h3>
+                </div>
+                <div class="panel-body">
+                    <form id="keywordDockerFrom" method="post" class="form-horizontal"
+                          th:action="@{/docker}">
+                        <input type="hidden" name="listKeyWordId" id="listKeyWordId" th:value="${listKeyWordId}">
+                        <!--如果是修改的话，我们要转成put请求-->
+                        <input type="hidden" name="_method" value="put" th:if="${docker!=null}"/>
+                        <!--如果是修改的话，我们要转成put请求, 同时把ID隐藏起来-->
+                        <input type="hidden" name="id" th:if="${docker!=null}" th:value="${docker.id}" id="dockerId">
+                        <div class="form-group">
+                            <label class="col-sm-2 control-label" for="dockerName">关键字库名称</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="dockerName" name="dockerName"
+                                       placeholder="请输入内容" th:value="${docker!=null}?${docker.dockerName}"/>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-10 col-sm-offset-2">
+                                <button class="btn btn-primary" id="btn_sumbit">
+                                    保存
+                                </button>
+                                <a class="btn btn-primary" id="goBack" th:href="@{/dockers}">
+                                    返回
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <br>
+            <div class="panel-group">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">选择关键字</div>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr class="success">
+                            <th><input type="checkbox" id="checkAll" name="checkAll"/></th>
+                            <th>关键字</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr th:each="kw:${keywords}">
+                            <td>
+                                <input type="checkbox" name="checkItem" th:id="${kw.id}"
+                                       th:checked="${relationship!=null}?${#lists.contains(relationship, kw.id)}:false"/>
+                            </td>
+                            <td>[[${kw.content}]]</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div><!-- end of panel -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 引入底部通用html -->
+<div th:replace="commons/common_foot :: foot"></div>
+<!-- 复选框 -->
+<script>
+
+    // 全选单选的问题
+    $(function () {
+
+        function initTableCheckbox() {
+            var $thr = $('table thead tr');
+            var $checkAll = $thr.find('input');
+            var $tbr = $('table tbody tr');
+            var $itemTbr = $tbr.find('input');
+            $checkAll.click(function (event) {
+                /*将所有行的选中状态设成全选框的选中状态*/
+                $tbr.find('input').prop('checked', $(this).prop('checked'));
+                /*并调整所有选中行的CSS样式*/
+                if ($(this).prop('checked')) {
+                    $tbr.find('input').parent().parent().addClass('warning');
+                } else {
+                    $tbr.find('input').parent().parent().removeClass('warning');
+                }
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+            $thr.click(function () {
+                $(this).find('input').click();
+            });
+
+            $itemTbr.click(function (event) {
+                /*调整选中行的CSS样式*/
+                $(this).parent().parent().toggleClass('warning');
+                /*如果已经被选中行的行数等于表格的数据行数，将全选框设为选中状态，否则设为未选中状态*/
+                $checkAll.prop('checked', $tbr.find('input:checked').length == $tbr.length ? true : false);
+                /*阻止向上冒泡，以防再次触发点击操作*/
+                event.stopPropagation();
+            });
+
+            $tbr.click(function () {
+                $(this).find('input').click();
+            });
+
+        }
+
+        initTableCheckbox();
+    });
+</script>
+
+<script type="text/javascript">
+    $.validator.addMethod("curium", function (value, element) {
+        if (!value.length) {
+            return false;
+        }
+        var curium = /^([^@`!%^()~,.'"，。：‘’“”【】{}/#\$%\^&\*]+)$/;
+        return curium.test(value);
+    }, "关键字名称不能为空而且不能包含非法字符");
+    $(document).ready(function () {
+        $("#keywordDockerFrom").validate({
+            rules: {
+                dockerName: {
+                    required: true,
+                    // minlength: 1,
+                    maxlength: 50,
+                    curium: true
+                }
+            },
+            messages: {
+                dockerName: {
+                    required: "提示：请输入‘关键字库名称’！",
+                    // minlength: "关键字必须由至少2个字符组成",
+                    maxlength: "提示：‘关键字库名称’超长，请重新输入（最多50个汉字）！",
+                }
+            },
+            errorElement: "em",
+            errorPlacement: function (error, element) {
+                // Add the `help-block` class to the error element
+                error.addClass("help-block");
+                // Add `has-feedback` class to the parent div.form-group
+                // in order to add icons to inputs
+                element.parents(".col-sm-5").addClass("has-feedback");
+
+                if (element.prop("type") === "checkbox") {
+                    error.insertAfter(element.parent("label"));
+                } else {
+                    error.insertAfter(element);
+                }
+                // Add the span element, if doesn't exists, and apply the icon classes to it.
+                if (!element.next("span")[0]) {
+                    $("<span class='glyphicon glyphicon-remove form-control-feedback'></span>").insertAfter(element);
+                }
+            },
+            success: function (label, element) {
+                // Add the span element, if doesn't exists, and apply the icon classes to it.
+                if (!$(element).next("span")[0]) {
+                    $("<span class='glyphicon glyphicon-ok form-control-feedback'></span>").insertAfter($(element));
+                }
+            },
+            highlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-error").removeClass("has-success");
+                $(element).next("span").addClass("glyphicon-remove").removeClass("glyphicon-ok");
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element).parents(".col-sm-5").addClass("has-success").removeClass("has-error");
+                $(element).next("span").addClass("glyphicon-ok").removeClass("glyphicon-remove");
+            }
+        });
+    });
+    //新增修改关键字库校验
+    //wanghuidong modify 2018-12-12 修改此处逻辑
+    $("#btn_sumbit").click(function () {
+        //校验关键字库名称是否为空
+        var dockerNameVal = $("#dockerName").val();
+        if(dockerNameVal==null||dockerNameVal.length<1){
+            $("#alertDiv").empty();
+            $("#alertDiv").append("请输入关键字库名称！");
+            showPopBox();
+            return false;
+        }
+        //取出关键字库的ID
+        var dockerId = $("#dockerId").val();
+        //组装json数据待传递后台处理
+        var jsonData = JSON.stringify({id : dockerId,dockerName : dockerNameVal});
+        var submitFlag = true;
+        $.ajax({
+            type: 'get',
+            contentType: "application/json",
+            url:  basePath+"docker/getCount/"+encodeURI(encodeURI(jsonData)),
+            dataType: 'json',
+            async: false,
+            cache: false,
+            success: function (data) {
+                if (0 != data) {
+                    $("#alertDiv").empty();
+                    $("#alertDiv").append("系统中已经存在关键字库【"+dockerNameVal+"】，请重新输入！");
+                    showPopBox();
+                    submitFlag = false;
+                }
+            },
+            error: function () {
+                alert("程序请求错误");
+                submitFlag = false;
+            }
+        });
+        if(submitFlag){
+            //处理选择的关键字id的集合
+            var listKeyWordId = new Array();
+            $("table tbody :checked").each(function () {
+                listKeyWordId.push($(this).attr('id'));
+            });
+            if (listKeyWordId.length == 0 || listKeyWordId == null) { // 没有选择关联条件
+                $("#alertDiv").empty();
+                $("#alertDiv").append("请选择关键字！");
+                showPopBox();
+                submitFlag = false;
+            } else {
+                $("#listKeyWordId").val(listKeyWordId);
+            }
+        }
+        return submitFlag;
+    });
+</script>
+</body>
+</html>

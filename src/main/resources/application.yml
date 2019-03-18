@@ -1,0 +1,32 @@
+server:
+  port: 8989
+  servlet:
+    context-path: /1.1.0
+spring:
+  thymeleaf:
+    cache: false
+  mvc:
+    date-format: yyyy-MM-dd
+    favicon:
+      enabled: true
+  datasource:
+    url: jdbc:sqlite:plugin/keyword.db3
+  auto:
+    openurl: true
+  web:
+    loginurl: http://localhost:8989${server.servlet.context-path}
+    firefoxexcute: plugin/Firefox 63.0.x86/FirefoxPortable.exe
+    excute: cmd /c start
+  resources:
+    static-locations: classpath:/static, classpath:/resources
+  data:
+    rest:
+      base-path: /api
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  freemarker:
+    cache: false
+logging:
+  file: log

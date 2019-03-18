@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- 引入公用头文件 -->
+    <head th:replace="commons/common_header :: common_header(~{::title},~{::link},~{})">
+    <title>关键字库列表</title>
+</head>
+
+<body>
+<!-- 头部和左侧导航 -->
+<div th:replace="commons/bar::topbar"></div>
+<div class="container-fluid">
+    <div class="row">
+        <!--引入侧边栏-->
+        <div th:replace="commons/bar::#sidebar(activeUri='dockers')"></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="row">
+                <div class="col-sm-9 col-md-8">
+                    <h2>关键字库维护</h2>
+                </div>
+            </div>
+            <h2 class="page-header"><a class="btn btn-sm btn-success" href="/docker" th:href="@{/docker}">新增关键字库
+            </a></h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped" wi>
+                    <thead>
+                    <tr>
+                        <th>序号</th>
+                        <th>关键字库名称</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr th:each="dk,dkStat:${dockers}">
+                        <td th:text="${dkStat.count}" style='width:50px;'></td>
+                        <td>[[${dk.dockerName}]]</td>
+                        <td style='width:200px;'>
+                            <a class="btn btn-sm btn-warning" th:href="@{/docker/{id}(id=${dk.id})}">修改
+                            </a>
+                            <button th:attr="del_uri=@{/docker/{id}(id=${dk.id})},contentStr=${dk.dockerName}"
+                                    class="btn btn-sm btn-danger deleteBtn">
+                                删除
+                            </button>
+                            <button class="btn btn-sm btn-primary" th:id="see+${dk.id}"
+                                    th:attr="dn=@{/}+'kwd/'+${dk.id}" onclick="kws(this)">查看
+                            </button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<form id="deleteEmpForm" method="post">
+    <input type="hidden" name="_method" value="delete"/>
+</form>
+<!-- 引入底部通用html -->
+<div th:replace="commons/common_foot :: foot"></div>
+<script>
+    $(document).ready(function () {
+        $(".deleteBtn").click(function () {
+            //wanghuidong modify 2018-12-10 增加删除的提示信息
+            var alertStr = $(this).attr("contentStr");
+            if(alertStr==undefined){
+                alertStr = "";
+            }
+            //wanghuidong modify 2018-12-10 增加删除的提示信息
+            if(confirm("数据删除后不能恢复,是否确认删除关键字库【"+alertStr+"】?")){
+                //删除当前关键字库
+                $("#deleteEmpForm").attr("action", $(this).attr("del_uri")).submit();
+                return false;
+            }
+        });
+    });
+
+    function kws(th) {
+        // 取出当前库的ID
+        var url = $(th).attr("dn");
+        $.ajax({
+            type: 'get',
+            contentType: "application/json",
+            url: url,
+            dataType: 'json',
+            async: false,
+            cache: false,
+            timeout: 600000,
+            success: function (data) {
+                //wanghuidong modify 2018-12-07 自定义弹出层内容,展示查看内容
+                $("#popupDiv").empty();
+                $("<h4>关键字库</h4>").appendTo($("#popupDiv"));
+                $("<div id='keyLibDiv'>"+data.keyWord+"</div>").addClass("pop-box-body").appendTo($("#popupDiv"));
+                $("<h4>内容</h4>").appendTo($("#popupDiv"));
+                $("<div id='contentDiv'>"+data.content+"</div>").addClass("pop-box-body").appendTo($("#popupDiv"));
+                showPopBox();
+            }
+        });
+    }
+
+</script>
+</body>
+</html>

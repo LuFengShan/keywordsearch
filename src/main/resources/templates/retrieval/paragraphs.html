@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- 引入公用头文件 -->
+    <head th:replace="commons/common_header :: common_header(~{::title},~{::link},~{})">
+    <title>文本检索</title>
+</head>
+
+<body>
+<div th:replace="commons/bar::topbar"></div>
+<div class="container-fluid">
+    <div class="row">
+        <!--引入侧边栏-->
+        <div th:replace="commons/bar::#sidebar(activeUri='paragraphs')"></div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+            <div class="row">
+                <div id="changeDiv">
+                    <!-- 引入后台返回的页面 -->
+                    <div th:replace="retrieval/paragraphs_result :: paragraphsResult"></div>
+                </div>
+                <!-- wanghuidong modify 2018-12-13 引入右侧树结构文件 -->
+                <div th:replace="commons/common_right :: right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- wanghuidong modify 2018-12-13 引入底部通用html -->
+<div th:replace="commons/common_foot :: foot"></div>
+<!-- wanghuidong modify 2018-12-13 注释:即使引入了子页面,但是主页面依然要写初始化方法,不然页面不初始化 -->
+<script th:src="@{/js/summernote/init_summernote.js}"></script>
+<!-- wanghuidong modify 2018-12-13 引入右侧树结构js -->
+<script th:src="@{/js/righttree/right_tree.js}"></script>
+<!-- wanghuidong modify 2018-12-13 主页面加载引入操作提交等功能的js,子页面同样引入 -->
+<script th:src="@{/js/retrieval/paragraphs_operate.js}"></script>
+</body>
+</html>
