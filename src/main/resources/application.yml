@@ -1,7 +1,10 @@
 server:
   port: 8989
   servlet:
-    context-path: /1.1.0
+    context-path: /v1
+  compression:
+    enabled: true
+    # mime-types: application/json,application/xml,text/html,text/xml,text/plain 默认已经开启这些东西了
 spring:
   thymeleaf:
     cache: false
@@ -26,7 +29,5 @@ spring:
     multipart:
       max-file-size: 100MB
       max-request-size: 100MB
-  freemarker:
-    cache: false
 logging:
   file: log
