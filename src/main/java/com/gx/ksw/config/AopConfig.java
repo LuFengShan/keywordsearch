@@ -2,8 +2,7 @@ package com.gx.ksw.config;
 
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -17,11 +16,12 @@ import java.time.Instant;
  * @since V1.1.0
  */
 @Slf4j
+@Aspect
 @Component
 public class AopConfig {
 
-	@AfterReturning("execution(* com.gx.ksw.*.*(..))")
-	public void logServiceAccess(JoinPoint joinPoint) {
-		log.error(joinPoint + " -> " + Instant.now().getEpochSecond());
+	@Before("execution(* com.gx.ksw.server.KeyWordServerImpl.*(..))")
+	public void logServiceAccess() {
+		log.info(" -> " + Instant.now().getEpochSecond());
 	}
 }
