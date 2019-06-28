@@ -29,7 +29,7 @@ import java.util.stream.Collectors;
  * 关键字库的维护
  */
 @Controller
-@Api(value = "KeyWordDockerController", description = "关键字库转发层")
+@Api(value = "KeyWordDockerController", tags = "关键字库转发层")
 public class KeyWordDockerController {
 	private Logger logger = LoggerFactory.getLogger(KeyWordDockerController.class);
 
