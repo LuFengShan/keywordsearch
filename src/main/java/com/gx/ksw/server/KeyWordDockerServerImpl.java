@@ -11,6 +11,7 @@ import freemarker.template.Template;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -37,6 +38,7 @@ public class KeyWordDockerServerImpl implements KeyWordServer<KeyWordDocker> {
 		return keyWordDockerDao.queryById(id);
 	}
 
+	@Cacheable(value = "keyWordDockerServerImpl", unless = "#result.empty")
 	@Override
 	public List<KeyWordDocker> findAll() {
 		return keyWordDockerDao.findAll();
@@ -215,7 +217,7 @@ public class KeyWordDockerServerImpl implements KeyWordServer<KeyWordDocker> {
 	 * wanghuidong modify 2018-12-10
 	 */
 	public Map<String, List<KeyWordMapContent>> changeHtml2Mht(Map<String, List<KeyWordMapContent>>
-																	   listMap) {
+			                                                           listMap) {
 		//替换所有黄色底色标签
 		//		Map<String, List<KeyWordMapContent>> newListMap = new HashMap<>();
 		//		listMap.forEach((key, value) -> newListMap.put(key, value.stream()

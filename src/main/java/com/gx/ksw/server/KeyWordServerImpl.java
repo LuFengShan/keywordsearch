@@ -4,6 +4,7 @@ import com.gx.ksw.dao.KeyWordDaoImpl;
 import com.gx.ksw.entities.KeyWord;
 import com.gx.ksw.util.UtilTime;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -27,6 +28,7 @@ public class KeyWordServerImpl implements KeyWordServer<KeyWord> {
 		return daoRepository.queryById(id);
 	}
 
+	@Cacheable(value = "keyWordServerImpl", unless = "#result.empty")
 	@Override
 	public List<KeyWord> findAll() {
 		return daoRepository.findAll();
