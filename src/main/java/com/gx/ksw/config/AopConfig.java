@@ -3,6 +3,7 @@ package com.gx.ksw.config;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.context.annotation.Description;
 import org.springframework.stereotype.Component;
 
 import java.time.Instant;
@@ -18,6 +19,7 @@ import java.time.Instant;
 @Slf4j
 @Aspect
 @Component
+@Description("AOP切面")
 public class AopConfig {
 
 	@Before("execution(* com.gx.ksw.server.KeyWordServerImpl.*(..))")
