@@ -30,9 +30,7 @@ public class RedisConfig extends CachingConfigurerSupport {
 			StringBuilder sb = new StringBuilder();
 			String className = Pattern.compile("\\.")
 					.splitAsStream(target.getClass().getName()) // 缓存类的全路径
-					.map(s -> {
-						return String.valueOf(s.charAt(0)); // 取各个路径的第一个字母
-					})
+					.map(s -> String.valueOf(s.charAt(0))) // 取各个路径的第一个字母
 					.collect(Collectors.joining(".")); // 用点拼接起来
 			sb.append(className);
 			sb.append(".");
