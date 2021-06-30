@@ -1,0 +1,142 @@
+2020-12-08 16:41:35,438 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 16780 (D:\github_code\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\github_code\keywordsearch)
+2020-12-08 16:41:35,445 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2020-12-08 16:41:41,616 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 7.157 seconds (JVM running for 9.503)
+2020-12-08 16:41:43,623 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:43,625 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: home
+2020-12-08 16:41:43,628 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:43,629 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:43,629 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :home 执行完了
+2020-12-08 16:41:43,629 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: home, 返回结果为: home
+2020-12-08 16:41:46,549 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:46,550 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
+2020-12-08 16:41:46,687 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:46,688 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:46,688 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
+2020-12-08 16:41:46,688 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
+2020-12-08 16:41:46,944 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:46,944 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
+2020-12-08 16:41:46,950 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:46,950 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:46,951 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
+2020-12-08 16:41:46,951 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2020-12-08 16:41:49,971 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:49,971 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardDocumentSearch
+2020-12-08 16:41:49,973 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:49,973 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:49,973 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardDocumentSearch 执行完了
+2020-12-08 16:41:49,973 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardDocumentSearch, 返回结果为: retrieval/files
+2020-12-08 16:41:50,126 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:50,127 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
+2020-12-08 16:41:50,127 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:50,128 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:50,128 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
+2020-12-08 16:41:50,128 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2020-12-08 16:41:56,587 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:56,587 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-12-08 16:41:56,589 INFO (KeyWordController.java:35)- sgx-sgx
+2020-12-08 16:41:56,590 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-12-08 16:41:56,592 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-12-08 16:41:56,592 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-12-08 16:41:56,596 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:56,597 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:56,597 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-12-08 16:41:56,597 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
+2020-12-08 16:41:57,499 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:57,499 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWordDocker
+2020-12-08 16:41:57,502 INFO (KeyWordDockerController.java:65)- Header 'host' = localhost:8989
+2020-12-08 16:41:57,502 INFO (KeyWordDockerController.java:65)- Header 'connection' = keep-alive
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'upgrade-insecure-requests' = 1
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'user-agent' = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'accept' = text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-site' = same-origin
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-mode' = navigate
+2020-12-08 16:41:57,503 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-user' = ?1
+2020-12-08 16:41:57,504 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-dest' = document
+2020-12-08 16:41:57,504 INFO (KeyWordDockerController.java:65)- Header 'referer' = http://localhost:8989/v1/keywords
+2020-12-08 16:41:57,504 INFO (KeyWordDockerController.java:65)- Header 'accept-encoding' = gzip, deflate, br
+2020-12-08 16:41:57,504 INFO (KeyWordDockerController.java:65)- Header 'accept-language' = zh-CN,zh;q=0.9
+2020-12-08 16:41:57,505 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-12-08 16:41:57,505 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-12-08 16:41:57,506 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:57,506 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:57,506 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :findAllKeyWordDocker 执行完了
+2020-12-08 16:41:57,506 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWordDocker, 返回结果为: docker/list
+2020-12-08 16:41:58,848 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:58,848 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
+2020-12-08 16:41:58,850 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:58,850 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:58,851 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
+2020-12-08 16:41:58,851 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
+2020-12-08 16:41:58,984 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:41:58,985 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
+2020-12-08 16:41:58,985 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:41:58,985 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:41:58,986 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
+2020-12-08 16:41:58,986 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2020-12-08 16:42:00,361 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:42:00,361 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardDocumentSearch
+2020-12-08 16:42:00,362 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:42:00,362 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:42:00,362 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardDocumentSearch 执行完了
+2020-12-08 16:42:00,362 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardDocumentSearch, 返回结果为: retrieval/files
+2020-12-08 16:42:00,495 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:42:00,495 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
+2020-12-08 16:42:00,496 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:42:00,497 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:42:00,497 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
+2020-12-08 16:42:00,497 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2020-12-08 16:43:08,274 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:43:08,274 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: documentUpload
+2020-12-08 16:43:08,275 INFO (DocumentSearchServerImpl.java:60)- 文件路径 ： sgx.txt，文件后缀 ： .txt
+2020-12-08 16:43:08,278 INFO (DocumentSearchServerImpl.java:304)- 包含关键字的句子数量 ： 1
+2020-12-08 16:43:08,388 INFO (DocumentSearchController.java:93)- 导出文件的结果的路径 ： D:\github_code\github_code\keywordsearch\upload-dir\关键字检索结果.doc
+2020-12-08 16:43:08,389 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:43:08,389 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:43:08,389 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :documentUpload 执行完了
+2020-12-08 16:43:08,389 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: documentUpload, 返回结果为: retrieval/files_result
+2020-12-08 16:43:26,659 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:43:26,659 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: serveFile
+2020-12-08 16:43:26,661 INFO (FileSystemStorageService.java:69)- 加载资源 ： 关键字检索结果.doc
+2020-12-08 16:43:26,663 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:43:26,663 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:43:26,663 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :serveFile 执行完了
+2020-12-08 16:43:26,664 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: serveFile, 返回结果为: <200 OK,URL [file:/D:/github_code/github_code/keywordsearch/upload-dir/关键字检索结果.doc],{Content-Disposition=[attachment; filename="å³é®å­æ£ç´¢ç»æ.doc"]}>
+2020-12-08 16:43:46,729 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:43:46,730 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: documentUpload
+2020-12-08 16:43:46,731 INFO (DocumentSearchServerImpl.java:60)- 文件路径 ： sgx.txt，文件后缀 ： .txt
+2020-12-08 16:43:46,731 INFO (DocumentSearchServerImpl.java:304)- 包含关键字的句子数量 ： 1
+2020-12-08 16:43:46,744 INFO (DocumentSearchController.java:93)- 导出文件的结果的路径 ： D:\github_code\github_code\keywordsearch\upload-dir\关键字检索结果.doc
+2020-12-08 16:43:46,745 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:43:46,745 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:43:46,745 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :documentUpload 执行完了
+2020-12-08 16:43:46,746 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: documentUpload, 返回结果为: retrieval/files_result
+2020-12-08 16:44:29,759 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:44:29,760 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardDocumentSearch
+2020-12-08 16:44:32,192 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:44:32,193 INFO (AopConfig.java:59)- 3s
+2020-12-08 16:44:32,193 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardDocumentSearch 执行完了
+2020-12-08 16:44:32,193 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardDocumentSearch, 返回结果为: retrieval/files
+2020-12-08 16:44:32,396 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:44:32,397 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
+2020-12-08 16:44:32,398 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:44:32,399 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:44:32,400 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
+2020-12-08 16:44:32,401 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2020-12-08 16:45:05,080 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:45:05,081 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: documentUpload
+2020-12-08 16:45:05,081 INFO (DocumentSearchServerImpl.java:60)- 文件路径 ： sgx.txt，文件后缀 ： .txt
+2020-12-08 16:45:05,082 INFO (DocumentSearchServerImpl.java:304)- 包含关键字的句子数量 ： 1
+2020-12-08 16:45:05,094 INFO (DocumentSearchController.java:93)- 导出文件的结果的路径 ： D:\github_code\github_code\keywordsearch\upload-dir\关键字检索结果.doc
+2020-12-08 16:45:05,095 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:45:05,095 INFO (AopConfig.java:59)- 0s
+2020-12-08 16:45:05,095 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :documentUpload 执行完了
+2020-12-08 16:45:05,096 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: documentUpload, 返回结果为: retrieval/files_result
+2020-12-08 16:48:28,979 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-12-08 16:48:28,980 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: documentUpload
+2020-12-08 16:48:37,839 INFO (DocumentSearchServerImpl.java:60)- 文件路径 ： sgx.txt，文件后缀 ： .txt
+2020-12-08 16:48:37,847 INFO (DocumentSearchServerImpl.java:304)- 包含关键字的句子数量 ： 1
+2020-12-08 16:51:26,128 INFO (DocumentSearchController.java:93)- 导出文件的结果的路径 ： D:\github_code\github_code\keywordsearch\upload-dir\关键字检索结果.doc
+2020-12-08 16:51:26,128 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2020-12-08 16:51:26,129 INFO (AopConfig.java:59)- 178s
+2020-12-08 16:51:26,129 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :documentUpload 执行完了
+2020-12-08 16:51:26,129 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: documentUpload, 返回结果为: retrieval/files_result

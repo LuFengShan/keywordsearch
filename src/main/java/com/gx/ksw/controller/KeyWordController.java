@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.gx.ksw.entities.KeyWord;
 import com.gx.ksw.server.KeyWordServerImpl;
 import io.swagger.annotations.*;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,6 +15,7 @@ import java.net.URLDecoder;
 import java.util.List;
 import java.util.Objects;
 
+@Slf4j
 @Controller
 @Api(value = "KeyWordController", description = "关键字转发层")
 public class KeyWordController {
@@ -23,19 +25,28 @@ public class KeyWordController {
 
 	/**
 	 * 查询所有的关键字
+	 *
 	 * @param model
 	 * @return
 	 */
 	@GetMapping("/keywords")
 	@ApiOperation(value = "查看所有用户", notes = "查看所有用户", httpMethod = "GET")
 	public String findAllKeyWord(@ApiParam("返回所有的关键字") Model model) {
+		log.info("sgx-sgx");
+		log.error("sgx-sgx");
 		List<KeyWord> all = keyWordServer.findAll();
 		model.addAttribute("keywords", all);
 		return "keyword/list";
 	}
+	
+	@GetMapping("/sgx/sgx")
+	public String sgx(@ApiParam("返回所有的关键字") Model model) {
+		return "98";
+	}
 
 	/**
 	 * 根据关键字内容模糊查询一些数据
+	 *
 	 * @param content
 	 * @param model
 	 * @return
@@ -51,15 +62,16 @@ public class KeyWordController {
 
 	/**
 	 * 来到修改页面，查出当前关键字，在页面回显
+	 *
 	 * @param id
 	 * @param model
 	 * @return
 	 */
 	@GetMapping("/keyword/{id}")
 	@ApiOperation(value = "修改关键字", notes = "修改关键字", httpMethod = "GET")
-	public String toEditPage(@ApiParam("关键字的ID") @PathVariable("id") Long id,Model model){
+	public String toEditPage(@ApiParam("关键字的ID") @PathVariable("id") Long id, Model model) {
 		KeyWord keyWord = keyWordServer.queryById(id);
-		model.addAttribute("keyword",keyWord);
+		model.addAttribute("keyword", keyWord);
 		//回到修改页面(add是一个修改添加二合一的页面);
 		return "keyword/add";
 	}
@@ -79,6 +91,7 @@ public class KeyWordController {
 
 	/**
 	 * 来到关键字添加页面
+	 *
 	 * @return
 	 */
 	@GetMapping("/keyword")
@@ -102,6 +115,7 @@ public class KeyWordController {
 
 	/**
 	 * 根据ID删除关键字
+	 *
 	 * @param id
 	 * @return
 	 */
@@ -117,22 +131,22 @@ public class KeyWordController {
 
 	/**
 	 * 查看表中有几个这样的关键字,没有返回0，存在则返回1
+	 *
 	 * @param jsonData
-	 * @return
-	 * wanghuidong modify 2018-12-11 修改此方法逻辑
+	 * @return wanghuidong modify 2018-12-11 修改此方法逻辑
 	 */
 	@GetMapping("/keyword/getCount/{jsonData}")
 	@ResponseBody
 	@ApiOperation("查询表中是否存在关键字")
-	public int getKeywordCount(@PathVariable String jsonData){
+	public int getKeywordCount(@PathVariable String jsonData) {
 		try {
-			jsonData = URLDecoder.decode(jsonData,"UTF-8");
+			jsonData = URLDecoder.decode(jsonData, "UTF-8");
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
 		}
-		KeyWord keyWordVo = JSONObject.parseObject(jsonData,KeyWord.class);
+		KeyWord keyWordVo = JSONObject.parseObject(jsonData, KeyWord.class);
 		int count = keyWordServer.getKeywordCount(keyWordVo);
-		if (Objects.equals(0, count)){
+		if (Objects.equals(0, count)) {
 			return 0;//可以保存
 		} else {
 			return 1;//重复存在

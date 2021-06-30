@@ -1,0 +1,50 @@
+2021-06-29 10:53:24,199 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 3028 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
+2021-06-29 10:53:24,205 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2021-06-29 10:53:29,795 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 6.21 seconds (JVM running for 8.698)
+2021-06-29 10:54:25,183 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.HomeController.home】总耗时(毫秒):3252
+2021-06-29 10:55:31,976 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):26530
+2021-06-29 10:56:01,928 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1408
+2021-06-29 10:56:28,973 INFO (KeyWordDockerController.java:65)- Header 'host' = localhost:8989
+2021-06-29 10:56:28,979 INFO (KeyWordDockerController.java:65)- Header 'connection' = keep-alive
+2021-06-29 10:56:28,984 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua' = " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+2021-06-29 10:56:28,989 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua-mobile' = ?0
+2021-06-29 10:56:28,995 INFO (KeyWordDockerController.java:65)- Header 'upgrade-insecure-requests' = 1
+2021-06-29 10:56:29,000 INFO (KeyWordDockerController.java:65)- Header 'user-agent' = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+2021-06-29 10:56:29,005 INFO (KeyWordDockerController.java:65)- Header 'accept' = text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2021-06-29 10:56:29,010 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-site' = same-origin
+2021-06-29 10:56:29,015 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-mode' = navigate
+2021-06-29 10:56:29,021 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-user' = ?1
+2021-06-29 10:56:29,026 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-dest' = document
+2021-06-29 10:56:29,031 INFO (KeyWordDockerController.java:65)- Header 'referer' = http://localhost:8989/v1/paragraphs
+2021-06-29 10:56:29,036 INFO (KeyWordDockerController.java:65)- Header 'accept-encoding' = gzip, deflate, br
+2021-06-29 10:56:29,042 INFO (KeyWordDockerController.java:65)- Header 'accept-language' = zh-CN,zh;q=0.9
+2021-06-29 10:56:29,081 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-06-29 10:56:29,087 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-06-29 10:56:38,874 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordDockerController.findAllKeyWordDocker】总耗时(毫秒):1510
+2021-06-29 10:57:37,590 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 4848 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
+2021-06-29 10:57:37,631 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2021-06-29 10:57:42,954 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 5.987 seconds (JVM running for 7.555)
+2021-06-29 10:57:47,946 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2021-06-29 10:57:54,645 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWordDocker
+2021-06-29 10:58:10,804 INFO (KeyWordDockerController.java:65)- Header 'host' = localhost:8989
+2021-06-29 10:58:10,811 INFO (KeyWordDockerController.java:65)- Header 'connection' = keep-alive
+2021-06-29 10:58:10,818 INFO (KeyWordDockerController.java:65)- Header 'cache-control' = max-age=0
+2021-06-29 10:58:10,824 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua' = " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
+2021-06-29 10:58:10,830 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua-mobile' = ?0
+2021-06-29 10:58:10,837 INFO (KeyWordDockerController.java:65)- Header 'upgrade-insecure-requests' = 1
+2021-06-29 10:58:10,844 INFO (KeyWordDockerController.java:65)- Header 'user-agent' = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
+2021-06-29 10:58:10,850 INFO (KeyWordDockerController.java:65)- Header 'accept' = text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+2021-06-29 10:58:10,856 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-site' = same-origin
+2021-06-29 10:58:10,862 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-mode' = navigate
+2021-06-29 10:58:10,868 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-user' = ?1
+2021-06-29 10:58:10,874 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-dest' = document
+2021-06-29 10:58:10,881 INFO (KeyWordDockerController.java:65)- Header 'referer' = http://localhost:8989/v1/paragraphs
+2021-06-29 10:58:10,887 INFO (KeyWordDockerController.java:65)- Header 'accept-encoding' = gzip, deflate, br
+2021-06-29 10:58:10,895 INFO (KeyWordDockerController.java:65)- Header 'accept-language' = zh-CN,zh;q=0.9
+2021-06-29 10:58:10,945 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-06-29 10:58:10,951 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-06-29 10:58:32,436 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordDockerController.findAllKeyWordDocker】总耗时(毫秒):21649
+2021-06-29 10:58:46,740 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
+2021-06-29 10:58:47,033 INFO (AopConfig.java:59)- 59s
+2021-06-29 10:58:51,308 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :findAllKeyWordDocker 执行完了
+2021-06-29 10:58:52,814 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWordDocker, 返回结果为: docker/list

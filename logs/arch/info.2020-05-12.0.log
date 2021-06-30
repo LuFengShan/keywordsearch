@@ -1,0 +1,66 @@
+2020-05-12 15:23:48,069 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:24:15,952 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:24:39,308 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:25:04,849 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:25:11,177 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on reactive-gx with PID 5472 (D:\github_code\keywordsearch\target\classes started by Administrator in D:\github_code\keywordsearch)
+2020-05-12 15:25:11,178 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2020-05-12 15:25:13,903 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 2.783 seconds (JVM running for 100.17)
+2020-05-12 15:25:18,091 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 15:25:18,093 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-05-12 15:25:18,097 INFO (KeyWordController.java:35)- sgx-sgx
+2020-05-12 15:25:18,098 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:25:18,099 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 15:25:18,100 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 15:25:18,115 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 15:25:18,116 INFO (AopConfig.java:58)- 0s
+2020-05-12 15:25:18,117 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-05-12 15:25:18,117 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
+2020-05-12 15:25:27,138 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 15:25:27,139 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-05-12 15:25:27,139 INFO (KeyWordController.java:35)- sgx-sgx
+2020-05-12 15:25:27,140 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:25:27,141 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 15:25:27,141 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 15:25:27,142 INFO (AopConfig.java:58)- 0s
+2020-05-12 15:25:27,142 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-05-12 15:25:27,142 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
+2020-05-12 15:26:26,057 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 15:26:26,059 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-05-12 15:26:26,059 INFO (KeyWordController.java:35)- sgx-sgx
+2020-05-12 15:26:26,059 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 15:26:26,060 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 15:26:26,060 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 15:26:26,061 INFO (AopConfig.java:58)- 0s
+2020-05-12 15:26:26,061 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-05-12 15:26:26,061 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
+2020-05-12 15:32:02,953 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on reactive-gx with PID 16956 (D:\github_code\keywordsearch\target\classes started by Administrator in D:\github_code\keywordsearch)
+2020-05-12 15:32:02,955 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2020-05-12 15:32:08,308 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 6.051 seconds (JVM running for 7.88)
+2020-05-12 16:11:27,779 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on reactive-gx with PID 14548 (D:\github_code\keywordsearch\target\classes started by Administrator in D:\github_code\keywordsearch)
+2020-05-12 16:11:27,782 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2020-05-12 16:11:34,321 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 7.239 seconds (JVM running for 11.043)
+2020-05-12 16:11:35,899 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 16:11:35,902 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: home
+2020-05-12 16:11:35,906 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 16:11:35,906 INFO (AopConfig.java:58)- 0s
+2020-05-12 16:11:35,907 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :home 执行完了
+2020-05-12 16:11:35,907 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: home, 返回结果为: home
+2020-05-12 16:11:42,023 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 16:11:42,024 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-05-12 16:11:42,029 INFO (KeyWordController.java:35)- sgx-sgx
+2020-05-12 16:11:42,029 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 16:11:42,034 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 16:11:42,034 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 16:11:42,177 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 16:11:42,178 INFO (AopConfig.java:58)- 0s
+2020-05-12 16:11:42,179 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-05-12 16:11:42,179 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
+2020-05-12 16:11:46,967 INFO (AopConfig.java:54)- Around -> 注解方式AOP拦截开始进入环绕通知.......
+2020-05-12 16:11:46,968 INFO (AopConfig.java:40)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
+2020-05-12 16:11:46,968 INFO (KeyWordController.java:35)- sgx-sgx
+2020-05-12 16:11:46,968 ERROR (KeyWordController.java:36)- sgx-sgx
+2020-05-12 16:11:46,969 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2020-05-12 16:11:46,970 INFO (AopConfig.java:57)- Around -> 准备退出环绕......
+2020-05-12 16:11:46,971 INFO (AopConfig.java:58)- 0s
+2020-05-12 16:11:46,971 INFO (AopConfig.java:47)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
+2020-05-12 16:11:46,971 INFO (AopConfig.java:72)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
