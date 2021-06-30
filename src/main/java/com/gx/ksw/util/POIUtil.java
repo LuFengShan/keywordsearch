@@ -14,6 +14,9 @@ public class POIUtil {
 	 * @return
 	 */
 	public static String getCellFormatValue(Cell cell) {
+		// 原样输出cell中的内容
+//		DataFormatter formatter = new DataFormatter();
+//		formatter.formatCellValue(cell)
 		String str;
 		switch (cell.getCellType()) {
 			case STRING:
