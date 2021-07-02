@@ -1,195 +1,58 @@
-2021-06-30 11:36:32,843 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 13952 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
-2021-06-30 11:36:32,849 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2021-06-30 11:36:37,382 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 5.148 seconds (JVM running for 6.758)
-2021-06-30 11:36:56,646 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:36:56,647 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: home
-2021-06-30 11:36:56,650 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.HomeController.home】总耗时(毫秒):2
-2021-06-30 11:36:56,651 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:36:56,651 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:36:56,651 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :home 执行完了
-2021-06-30 11:36:56,651 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: home, 返回结果为: home
-2021-06-30 11:40:00,019 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:40:00,019 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: home
-2021-06-30 11:40:00,020 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.HomeController.home】总耗时(毫秒):0
-2021-06-30 11:40:00,020 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:40:00,020 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:40:00,021 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :home 执行完了
-2021-06-30 11:40:00,021 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: home, 返回结果为: home
-2021-06-30 11:41:35,932 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:35,932 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 11:41:36,129 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):155
-2021-06-30 11:41:36,130 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:36,130 INFO (AopConfig.java:59)- 1s
-2021-06-30 11:41:36,130 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 11:41:36,130 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 11:41:36,436 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:36,436 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 11:41:36,440 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):4
-2021-06-30 11:41:36,441 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:36,441 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:41:36,442 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 11:41:36,443 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 11:41:40,733 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:40,734 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWord
-2021-06-30 11:41:40,739 INFO (KeyWordController.java:35)- sgx-sgx
-2021-06-30 11:41:40,739 ERROR (KeyWordController.java:36)- sgx-sgx
-2021-06-30 11:41:40,742 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-06-30 11:41:40,742 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-06-30 11:41:40,748 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordController.findAllKeyWord】总耗时(毫秒):13
-2021-06-30 11:41:40,748 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:40,749 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:41:40,749 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :findAllKeyWord 执行完了
-2021-06-30 11:41:40,749 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWord, 返回结果为: keyword/list
-2021-06-30 11:41:42,959 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:42,959 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: findAllKeyWordDocker
-2021-06-30 11:41:42,965 INFO (KeyWordDockerController.java:65)- Header 'host' = localhost:8989
-2021-06-30 11:41:42,966 INFO (KeyWordDockerController.java:65)- Header 'connection' = keep-alive
-2021-06-30 11:41:42,966 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua' = " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"
-2021-06-30 11:41:42,967 INFO (KeyWordDockerController.java:65)- Header 'sec-ch-ua-mobile' = ?0
-2021-06-30 11:41:42,967 INFO (KeyWordDockerController.java:65)- Header 'upgrade-insecure-requests' = 1
-2021-06-30 11:41:42,967 INFO (KeyWordDockerController.java:65)- Header 'user-agent' = Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36
-2021-06-30 11:41:42,967 INFO (KeyWordDockerController.java:65)- Header 'accept' = text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-2021-06-30 11:41:42,967 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-site' = same-origin
-2021-06-30 11:41:42,968 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-mode' = navigate
-2021-06-30 11:41:42,968 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-user' = ?1
-2021-06-30 11:41:42,968 INFO (KeyWordDockerController.java:65)- Header 'sec-fetch-dest' = document
-2021-06-30 11:41:42,969 INFO (KeyWordDockerController.java:65)- Header 'referer' = http://localhost:8989/v1/keywords
-2021-06-30 11:41:42,969 INFO (KeyWordDockerController.java:65)- Header 'accept-encoding' = gzip, deflate, br
-2021-06-30 11:41:42,969 INFO (KeyWordDockerController.java:65)- Header 'accept-language' = zh-CN,zh;q=0.9
-2021-06-30 11:41:42,970 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-06-30 11:41:42,970 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-06-30 11:41:42,971 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordDockerController.findAllKeyWordDocker】总耗时(毫秒):11
-2021-06-30 11:41:42,971 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:42,972 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:41:42,972 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :findAllKeyWordDocker 执行完了
-2021-06-30 11:41:42,972 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: findAllKeyWordDocker, 返回结果为: docker/list
-2021-06-30 11:41:44,542 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:44,543 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 11:41:44,544 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):1
-2021-06-30 11:41:44,545 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:44,545 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:41:44,545 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 11:41:44,546 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 11:41:44,720 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:41:44,721 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 11:41:44,722 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1
-2021-06-30 11:41:44,722 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:41:44,722 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:41:44,723 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 11:41:44,723 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 11:52:13,880 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:52:13,881 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: home
-2021-06-30 11:52:13,881 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.HomeController.home】总耗时(毫秒):0
-2021-06-30 11:52:13,881 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:52:13,881 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:52:13,882 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :home 执行完了
-2021-06-30 11:52:13,882 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: home, 返回结果为: home
-2021-06-30 11:52:50,188 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:52:50,188 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 11:52:50,189 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):0
-2021-06-30 11:52:50,190 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:52:50,190 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:52:50,190 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 11:52:50,190 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 11:52:50,359 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:52:50,359 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 11:52:50,360 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1
-2021-06-30 11:52:50,360 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:52:50,360 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:52:50,360 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 11:52:50,361 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 11:53:21,347 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:53:21,347 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: subKeyWordSearch
-2021-06-30 11:53:21,382 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :subKeyWordSearch 执行完了
-2021-06-30 11:53:21,383 INFO (AopConfig.java:80)- AfterThrowing -> 注解方式AOP进入方法异常拦截, 方法名为: subKeyWordSearch, 异常信息为: write javaBean error, fastjson version 1.2.41, class org.springframework.validation.BeanPropertyBindingResult, fieldName : org.springframework.validation.BindingResult.text, write javaBean error, fastjson version 1.2.41, class org.springframework.beans.GenericTypeAwarePropertyDescriptor, fieldName : 0
-2021-06-30 11:58:49,556 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 13272 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
-2021-06-30 11:58:49,558 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2021-06-30 11:58:53,735 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 4.77 seconds (JVM running for 6.52)
-2021-06-30 11:59:07,918 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:59:07,920 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 11:59:08,132 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):158
-2021-06-30 11:59:08,132 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:59:08,133 INFO (AopConfig.java:59)- 1s
-2021-06-30 11:59:08,133 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 11:59:08,133 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 11:59:08,665 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:59:08,666 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 11:59:08,669 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):3
-2021-06-30 11:59:08,670 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 11:59:08,670 INFO (AopConfig.java:59)- 0s
-2021-06-30 11:59:08,670 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 11:59:08,671 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 11:59:20,879 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 11:59:20,881 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: subKeyWordSearch
-2021-06-30 11:59:20,918 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :subKeyWordSearch 执行完了
-2021-06-30 11:59:20,919 INFO (AopConfig.java:80)- AfterThrowing -> 注解方式AOP进入方法异常拦截, 方法名为: subKeyWordSearch, 异常信息为: write javaBean error, fastjson version 1.2.75, class org.springframework.validation.BeanPropertyBindingResult, fieldName : org.springframework.validation.BindingResult.text, write javaBean error, fastjson version 1.2.75, class org.springframework.beans.GenericTypeAwarePropertyDescriptor, fieldName : 0
-2021-06-30 12:33:57,887 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:33:57,887 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 12:33:57,888 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):1
-2021-06-30 12:33:57,889 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:33:57,890 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:33:57,890 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 12:33:57,891 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 12:33:58,181 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:33:58,182 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 12:33:58,183 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1
-2021-06-30 12:33:58,183 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:33:58,184 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:33:58,184 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 12:33:58,184 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 12:35:07,637 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:35:07,638 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 12:35:07,639 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):1
-2021-06-30 12:35:07,640 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:35:07,640 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:35:07,640 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 12:35:07,641 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 12:35:07,934 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:35:07,934 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 12:35:07,936 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):0
-2021-06-30 12:35:07,936 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:35:07,936 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:35:07,937 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 12:35:07,937 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 12:37:43,057 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:37:43,058 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 12:37:43,061 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):3
-2021-06-30 12:37:43,061 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:37:43,062 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:37:43,062 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 12:37:43,063 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 12:37:43,604 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:37:43,604 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 12:37:43,606 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1
-2021-06-30 12:37:43,607 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:37:43,608 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:37:43,609 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 12:37:43,610 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 12:40:01,659 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:40:01,660 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 12:40:01,661 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):1
-2021-06-30 12:40:01,661 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:40:01,661 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:40:01,662 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 12:40:01,662 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 12:40:01,883 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:40:01,883 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 12:40:01,884 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):0
-2021-06-30 12:40:01,885 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:40:01,885 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:40:01,885 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 12:40:01,886 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
-2021-06-30 12:42:26,918 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:42:26,919 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: forWardKeyWordSearch
-2021-06-30 12:42:26,921 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.KeyWordSearchController.forWardKeyWordSearch】总耗时(毫秒):1
-2021-06-30 12:42:26,921 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:42:26,921 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:42:26,922 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :forWardKeyWordSearch 执行完了
-2021-06-30 12:42:26,922 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: forWardKeyWordSearch, 返回结果为: retrieval/paragraphs
-2021-06-30 12:42:27,151 INFO (AopConfig.java:55)- Around -> 注解方式AOP拦截开始进入环绕通知.......
-2021-06-30 12:42:27,152 INFO (AopConfig.java:41)- Before -> 注解方式AOP开始拦截, 当前拦截的方法名: queryKeyWordDocker
-2021-06-30 12:42:27,153 INFO (ApiLogAspect.java:62)- 接口切面拦截信息,【com.gx.ksw.controller.DocumentSearchController.queryKeyWordDocker】总耗时(毫秒):1
-2021-06-30 12:42:27,153 INFO (AopConfig.java:58)- Around -> 准备退出环绕......
-2021-06-30 12:42:27,154 INFO (AopConfig.java:59)- 0s
-2021-06-30 12:42:27,154 INFO (AopConfig.java:48)- After -> 注解方式AOP执行的方法 :queryKeyWordDocker 执行完了
-2021-06-30 12:42:27,154 INFO (AopConfig.java:73)- AfterReturning -> 注解方式AOP拦截的方法执行成功, 进入返回通知拦截, 方法名为: queryKeyWordDocker, 返回结果为: [{nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5555}, {nodes=[{text=规则}], text=库2}, {nodes=[{text=规则}], text=库1}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}], text=库5}, {nodes=[{text=规则}], text=库4}, {nodes=[{text=规则}], text=库3}, {nodes=[{text=规则}, {text=北京}, {text=上海}, {text=天津}, {text=用户}, {text=北京及天津和上海}, {text=北京及天津}], text=阿里}]
+2021-07-02 18:31:18,921 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 4932 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
+2021-07-02 18:31:18,994 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2021-07-02 18:31:25,837 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 8.11 seconds (JVM running for 10.184)
+2021-07-02 18:31:26,007 WARN (InvokeRecordHandler.java:24)- 
+测试代理模式 执行结束，耗时=5ms，入参=[], 出参="home"
+2021-07-02 18:31:35,915 INFO (KeyWordController.java:37)- sgx-sgx
+2021-07-02 18:31:35,916 ERROR (KeyWordController.java:38)- sgx-sgx
+2021-07-02 18:31:35,929 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-07-02 18:31:35,930 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
+2021-07-02 18:31:35,955 WARN (InvokeRecordHandler.java:24)- 
+测试代理模式 执行结束，耗时=22ms，入参=[
+	{
+		"keywords":[
+			{
+				"content":"规则",
+				"createTime":"20181206141635862",
+				"id":100,
+				"modifyTime":"20181207130557267"
+			},
+			{
+				"content":"北京",
+				"createTime":"20181206175200928",
+				"id":101,
+				"modifyTime":"20181206175200928"
+			},
+			{
+				"content":"上海",
+				"createTime":"20181206175205681",
+				"id":102,
+				"modifyTime":"20181206175205681"
+			},
+			{
+				"content":"天津",
+				"createTime":"20181206175210309",
+				"id":103,
+				"modifyTime":"20181206175210309"
+			},
+			{
+				"content":"用户",
+				"createTime":"20181207104321904",
+				"id":104,
+				"modifyTime":"20181207130605587"
+			},
+			{
+				"content":"北京及天津和上海",
+				"createTime":"20181224095155884",
+				"id":105,
+				"modifyTime":"20181224095155884"
+			},
+			{
+				"content":"北京及天津",
+				"createTime":"20181224095202527",
+				"id":106,
+				"modifyTime":"20181224095202527"
+			}
+		]
+	}
+], 出参="keyword/list"

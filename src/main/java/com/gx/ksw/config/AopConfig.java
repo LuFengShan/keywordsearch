@@ -22,8 +22,8 @@ import java.util.Arrays;
  * @since V1.1.0
  */
 @Slf4j
-@Aspect
-@Component
+//@Aspect
+//@Component
 @Description("AOP切面")
 public class AopConfig {
 	private long start;

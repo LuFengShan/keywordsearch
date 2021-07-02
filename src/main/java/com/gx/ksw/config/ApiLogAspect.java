@@ -14,16 +14,16 @@ import org.springframework.stereotype.Component;
  * @Author qinglang
  **/
 
-@Aspect
-@Component
+//@Aspect
+//@Component
 public class ApiLogAspect {
 
 
-    @Pointcut("execution(* com.gx.ksw.controller.*.*(..))")
+//    @Pointcut("execution(* com.gx.ksw.controller.*.*(..))")
     public void methodPointCut() {
     }
 
-    @Around("methodPointCut()")
+//    @Around("methodPointCut()")
     public Object around(ProceedingJoinPoint pjp) throws Throwable {
         Signature signature = pjp.getSignature();
         Long startTime = null;

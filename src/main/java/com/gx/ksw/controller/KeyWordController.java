@@ -3,6 +3,7 @@ package com.gx.ksw.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.gx.ksw.entities.KeyWord;
 import com.gx.ksw.server.KeyWordServerImpl;
+import com.gx.ksw.wanwan.demo.InvokeRecordAnno;
 import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +30,7 @@ public class KeyWordController {
 	 * @param model
 	 * @return
 	 */
+	@InvokeRecordAnno("测试代理模式")
 	@GetMapping("/keywords")
 	@ApiOperation(value = "查看所有用户", notes = "查看所有用户", httpMethod = "GET")
 	public String findAllKeyWord(@ApiParam("返回所有的关键字") Model model) {
