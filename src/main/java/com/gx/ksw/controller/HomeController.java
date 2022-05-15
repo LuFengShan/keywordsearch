@@ -1,6 +1,7 @@
 package com.gx.ksw.controller;
 
 import com.gx.ksw.wanwan.demo.InvokeRecordAnno;
+import com.gx.ksw.wanwan.demo2.Demo2;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,6 +24,7 @@ public class HomeController {
 	 * 自动来到主页
 	 * @return
 	 */
+	@Demo2("代理测试2")
 	@InvokeRecordAnno("测试代理模式")
 	@RequestMapping("/")
 	@ApiOperation("自动进入主页面")

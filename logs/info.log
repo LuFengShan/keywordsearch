@@ -1,6 +1,15 @@
-2021-11-27 13:33:18,023 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 13848 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
-2021-11-27 13:33:18,086 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2021-11-27 13:33:27,379 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 10.372 seconds (JVM running for 13.675)
-2021-11-27 13:34:58,199 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 7208 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
-2021-11-27 13:34:58,199 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2021-11-27 13:35:06,370 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 9.232 seconds (JVM running for 12.017)
+2022-05-15 21:32:33,841 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 23224 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
+2022-05-15 21:32:33,847 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2022-05-15 21:32:39,672 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 6.43 seconds (JVM running for 9.149)
+2022-05-15 21:33:35,771 INFO (InvokeRecordHandler.java:32)- 测试代理模式 执行结束, 耗时=4ms, 请求开始时间=2022-05-15 21:33:35.733, 入参=[]
+2022-05-15 21:33:35,771 INFO (InvokeRecordHandler.java:32)- 测试代理模式 执行结束, 耗时=39ms, 请求开始时间=2022-05-15 21:33:35.732, 入参=[]
+2022-05-15 21:34:41,190 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 17780 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
+2022-05-15 21:34:41,226 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2022-05-15 21:34:46,395 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 5.808 seconds (JVM running for 7.16)
+2022-05-15 21:35:41,699 INFO (InvokeRecordHandler.java:32)- 测试代理模式 执行结束, 耗时=5ms, 请求开始时间=2022-05-15 21:35:41.659, 入参=[]
+2022-05-15 21:35:41,700 INFO (InvokeRecordHandler.java:32)- 测试代理模式 执行结束, 耗时=40ms, 请求开始时间=2022-05-15 21:35:41.659, 入参=[]
+2022-05-15 21:36:52,599 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 1524 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
+2022-05-15 21:36:52,634 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2022-05-15 21:36:56,954 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 4.852 seconds (JVM running for 6.121)
+2022-05-15 21:37:00,810 INFO (Demo2Handler.java:15)- Demo2Handler
+2022-05-15 21:37:00,847 INFO (InvokeRecordHandler.java:32)- 测试代理模式 执行结束, 耗时=5ms, 请求开始时间=2022-05-15 21:37:00.807, 入参=[]
