@@ -1,58 +1,6 @@
-2021-07-02 18:31:18,921 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 4932 (D:\github_code\keywordsearch\target\classes started by sunguangxu in D:\github_code\keywordsearch)
-2021-07-02 18:31:18,994 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
-2021-07-02 18:31:25,837 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 8.11 seconds (JVM running for 10.184)
-2021-07-02 18:31:26,007 WARN (InvokeRecordHandler.java:24)- 
-测试代理模式 执行结束，耗时=5ms，入参=[], 出参="home"
-2021-07-02 18:31:35,915 INFO (KeyWordController.java:37)- sgx-sgx
-2021-07-02 18:31:35,916 ERROR (KeyWordController.java:38)- sgx-sgx
-2021-07-02 18:31:35,929 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-07-02 18:31:35,930 INFO (RedisConfig.java:44)- 缓存中的key:c.g.k.s.K.findAll
-2021-07-02 18:31:35,955 WARN (InvokeRecordHandler.java:24)- 
-测试代理模式 执行结束，耗时=22ms，入参=[
-	{
-		"keywords":[
-			{
-				"content":"规则",
-				"createTime":"20181206141635862",
-				"id":100,
-				"modifyTime":"20181207130557267"
-			},
-			{
-				"content":"北京",
-				"createTime":"20181206175200928",
-				"id":101,
-				"modifyTime":"20181206175200928"
-			},
-			{
-				"content":"上海",
-				"createTime":"20181206175205681",
-				"id":102,
-				"modifyTime":"20181206175205681"
-			},
-			{
-				"content":"天津",
-				"createTime":"20181206175210309",
-				"id":103,
-				"modifyTime":"20181206175210309"
-			},
-			{
-				"content":"用户",
-				"createTime":"20181207104321904",
-				"id":104,
-				"modifyTime":"20181207130605587"
-			},
-			{
-				"content":"北京及天津和上海",
-				"createTime":"20181224095155884",
-				"id":105,
-				"modifyTime":"20181224095155884"
-			},
-			{
-				"content":"北京及天津",
-				"createTime":"20181224095202527",
-				"id":106,
-				"modifyTime":"20181224095202527"
-			}
-		]
-	}
-], 出参="keyword/list"
+2021-11-27 13:33:18,023 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 13848 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
+2021-11-27 13:33:18,086 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2021-11-27 13:33:27,379 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 10.372 seconds (JVM running for 13.675)
+2021-11-27 13:34:58,199 INFO (StartupInfoLogger.java:50)- Starting KeyWordSearchApplication on AT14283 with PID 7208 (D:\IdeaProjects\keywordsearch\target\classes started by sunguangxu in D:\IdeaProjects\keywordsearch)
+2021-11-27 13:34:58,199 INFO (SpringApplication.java:654)- No active profile set, falling back to default profiles: default
+2021-11-27 13:35:06,370 INFO (StartupInfoLogger.java:59)- Started KeyWordSearchApplication in 9.232 seconds (JVM running for 12.017)

@@ -8,6 +8,8 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
 import java.lang.reflect.Method;
+import java.time.*;
+import java.time.format.DateTimeFormatter;
 
 @Component
 public class InvokeRecordHandler extends BaseMethodAdviceHandler<Object> {
@@ -20,11 +22,18 @@ public class InvokeRecordHandler extends BaseMethodAdviceHandler<Object> {
         String methodDesc = getMethodDesc(point);
         Object[] args = point.getArgs();
         long costTime = System.currentTimeMillis() - startTime;
+        ZonedDateTime zonedDateTime = Instant.ofEpochMilli(startTime).atZone(ZoneId.systemDefault());
+        String format = zonedDateTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss.SSS"));
 
-        logger.warn("\n{} 执行结束，耗时={}ms，入参={}, 出参={}",
-                methodDesc, costTime,
-                JSON.toJSONString(args, true),
-                JSON.toJSONString(result, true));
+//        logger.info("\n{} 执行结束，耗时={}ms，入参={}, 出参={}",
+//                methodDesc, costTime,
+//                JSON.toJSONString(args, true),
+//                JSON.toJSONString(result, true));
+        logger.info("{} 执行结束, 耗时={}ms, 请求开始时间={}, 入参={}",
+                methodDesc,
+                costTime,
+                format,
+                JSON.toJSONString(args, true));
     }
 
     @Override
